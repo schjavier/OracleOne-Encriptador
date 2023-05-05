@@ -27,6 +27,7 @@ main{
     margin-top: 90px;
     text-transform: lowercase;
     resize: none;
+    width:70%;
     height: 250px;
     caret-color:#0aec11;
 
@@ -51,6 +52,7 @@ main{
     padding-left: 20px;
     position: absolute;
     resize: none;
+    width: 30%;
     height: 600px;
     top:15px;
     caret-color: #0aec11;
@@ -125,3 +127,115 @@ main{
     color: #07a40c;
     opacity: 0.8;
 }
+
+/* media queries para responsividad */
+
+/* dispositivos pequeños */
+
+@media only screen and (max-width: 600px){
+    main{
+        flex-direction: column;
+        margin-left:10px;
+           
+    }
+
+    .textImput{
+        width: 90%;
+    }
+
+    .textOutput {
+        position:relative;
+        width:70%;
+        margin-left: -70px;
+        
+    }
+    
+    .botones{
+        flex-direction: column;
+    }
+    
+    .btn-copy{
+        left:-89px;
+        top:-70px;
+        height: 47px;
+        width: 228px;
+        font-size: 25px;
+
+    }
+
+    .btn-encrypt{
+        margin-right: 0px;
+        margin-bottom: 20px;
+        height: 47px;
+        width: 228px;
+        font-size: 25px;
+
+    } 
+    
+    
+    .btn-decrypt {
+        margin-left: 0px; 
+        height: 47px;
+        width: 228px;
+        font-size: 25px;
+
+    }
+
+
+}
+
+/* dispositivos medianos */
+
+@media only screen and (min-width: 601px) and (max-width:900px){
+
+    main{
+        flex-direction: column;
+        margin-left:10px;
+           
+    }
+
+    .textImput{
+        width: 90%;
+    }
+
+    .textOutput {
+        position:relative;
+        width:90%;
+        margin-left: -70px;
+        
+    }
+ 
+    .botones{
+        flex-direction: column;
+        
+    }
+    
+    .btn-copy{
+        left:-80px;
+        top:-90px;
+        height: 47px;
+        width: 228px;
+        font-size: 25px;
+
+    }
+    
+
+    .btn-encrypt{
+        margin-right: 0px;
+        margin-bottom: 20px;
+        height: 47px;
+        width: 228px;
+        font-size: 25px;
+    } 
+    
+    
+    .btn-decrypt {
+        margin-left: 0px;
+        height: 47px;
+        width: 228px;
+        font-size: 25px;
+    }
+
+}
+
+/* dispositivos grandes */

@@ -19,11 +19,16 @@ function encriptar(stringToEncrypt){
     let matriz = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]]
     stringToEncrypt = stringToEncrypt.toLowerCase();
 
+    if(stringToEncrypt == "") {
+        stringToEncrypt = "Ups! no hay ningún mensaje!"
+    }else{
+    
     for(i = 0; i < matriz.length; i++){
         if (stringToEncrypt.includes(matriz[i][0])){
             stringToEncrypt = stringToEncrypt.replaceAll(matriz[i][0], matriz[i][1])
         }
-    }
+    
+    }}
 
     return stringToEncrypt;
 
